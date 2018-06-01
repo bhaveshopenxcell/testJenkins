@@ -14,7 +14,7 @@ public class testConnection {
         String username = "root";
         String password = "root";
 
-
+   //farthi push
 
 //        String url = "jdbc:mysql://localhost:3306/jenkindev";
 //        String username = "root";
