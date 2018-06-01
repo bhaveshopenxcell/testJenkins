@@ -13,7 +13,8 @@ public class testConnection {
         String url = "jdbc:mysql://52.66.59.200:3306/testdatabase";
         String username = "root";
         String password = "root";
-        // change something
+
+
 
 //        String url = "jdbc:mysql://localhost:3306/jenkindev";
 //        String username = "root";
