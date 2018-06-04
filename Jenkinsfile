@@ -1,13 +1,15 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.3.3'
+            image 'gradle'
         }
     }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh './gradlew :clean'
+                sh './gradlew :assemble'
+                echo 'Completed'
             }
         }
     }

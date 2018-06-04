@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JetkinstestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JetkinstestApplication.class, args);z
+		SpringApplication.run(JetkinstestApplication.class, args);
 		// Comment adeddd,
 		// It changes
 	}
