@@ -10,6 +10,7 @@ pipeline {
                 sh './gradlew :clean'
                 sh './gradlew :assemble'
                 echo 'Completed'
+                sh 'sleep 99999999999'
             }
         }
     }
