@@ -14,12 +14,6 @@ public class testConnection {
         String username = "root";
         String password = "root";
 
-   //farthi push
-
-//        String url = "jdbc:mysql://localhost:3306/jenkindev";
-//        String username = "root";
-//        String password = "root";
-
         System.out.println("Connecting database...");
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
