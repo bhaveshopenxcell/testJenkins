@@ -10,7 +10,7 @@ node{
         sh "./gradlew :clean"
         sh  "docker ps"
         sh "./gradlew :assemble"
-        
+        // Ku6 problem he?"
         /*sleep "9999999999999"
         echo "Build Done"*/
     }
