@@ -8,6 +8,7 @@ node{
         sh "docker restart java"
         sh "./gradlew :clean"
         sh "./gradlew :assemble"
+        sh  "docker ps"
         sleep "9999999999999"
         /*echo "Build Done"*/
     }
