@@ -6,12 +6,12 @@ node{
         hence we only need to restart the container in order to do the build process.
         */
         
-        sh "docker restart java"
+       /* sh "docker restart java" */
         sh "./gradlew :clean"
         sh  "docker ps"
         sh "./gradlew :assemble"
         
-        sleep "9999999999999"
-        /*echo "Build Done"*/
+        /*sleep "9999999999999"
+        echo "Build Done"*/
     }
 }
