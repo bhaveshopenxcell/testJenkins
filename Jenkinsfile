@@ -1,9 +1,8 @@
-pipeline {
-    agent {
+node {
         docker {
             image 'gradle'
         }
-    }
+    
     def app
     stages {
         stage('build') {
