@@ -4,6 +4,7 @@ pipeline {
             image 'gradle'
         }
     }
+    def app
     stages {
         stage('build') {
            steps {
@@ -15,7 +16,7 @@ pipeline {
         }
         stage('docker image') {
            steps {
-                def app = docker.build "javagradlebuilded"
+                app = docker.build "javagradlebuilded"
             }
         }
     }
