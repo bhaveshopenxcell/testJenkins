@@ -3,8 +3,8 @@ node {
             image 'gradle'
         }
     
-    def app
-    stages {
+       def app
+    
         stage('build') {
            steps {
                 sh './gradlew :clean'
@@ -18,5 +18,5 @@ node {
                 app = docker.build "javagradlebuilded"
             }
         }
-    }
+    
 }
