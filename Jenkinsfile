@@ -10,7 +10,12 @@ pipeline {
                 sh './gradlew :clean'
                 sh './gradlew :assemble'
                echo 'Completed'
-                sh 'sleep 99999999999'
+                sh 'sleep 10'
+            }
+        }
+        stage('docker image') {
+           steps {
+                def app = docker.build "javagradlebuilded"
             }
         }
     }
