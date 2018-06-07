@@ -15,7 +15,13 @@ node {
        sh "${GRADLE_HOME}/bin/gradle clean build"
     }
 
-  
+    stage('Build image') {
+        /* This builds the actual image; synonymous to
+         * docker build on the command line */
+
+        app =  docker.build("openxcell/gradleimage")
+    }
+
 
    
 }
