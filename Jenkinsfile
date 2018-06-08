@@ -13,7 +13,7 @@ node{
         sh "./gradlew :clean"
         sh  "docker ps"
         sh "./gradlew :assemble"
-
+        echo "Showcasing the demo to Nawaf!!"
         /*sleep "9999999999999"
         echo "Build Done"*/
     }
