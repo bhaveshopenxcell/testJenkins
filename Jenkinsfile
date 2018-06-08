@@ -17,4 +17,14 @@ node{
         /*sleep "9999999999999"
         echo "Build Done"*/
     }
+    /*stages {
+        stage('build') {
+            steps {
+                sh './gradlew :clean'
+                sh './gradlew :assemble'
+                echo 'Completed'
+                sh 'sleep 99999999999'
+            }
+        }
+     }*/
 }
