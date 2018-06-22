@@ -11,5 +11,10 @@ pipeline{
                 sh "./gradlew assemble"
             }
         }
+        stage('Deploy'){
+            steps{
+                echo "Deployment is Pending"
+            }
+        }
     }
 }
