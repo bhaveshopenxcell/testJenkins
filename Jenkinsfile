@@ -4,7 +4,7 @@ pipeline{
         stage('Clean & Assemble'){
             agent{
                 docker{
-                    image 'gradle'
+                    image 'gradle:latest'
                 }
             }
             steps{
