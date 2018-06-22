@@ -1,4 +1,4 @@
 FROM openjdk:latest
-WORKDIR /output
+WORKDIR /build/libs/
 ADD . /app
 RUN java -jar app.jar

@@ -13,7 +13,8 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                echo "Deployment is Pending"
+                sh "docker cp myjenkins:/build/libs/jetkinstest-0.0.1-SNAPSHOT.jar /home/bhavesh/target/app.jar"
+                echo "Done"
             }
         }
     }
