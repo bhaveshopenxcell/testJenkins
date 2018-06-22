@@ -1,13 +1,14 @@
 pipeline{
-    agent any
+    agent none
     stages{
-        stage('Clean'){
+        stage('Clean & Assemble'){
+            agent{
+                docker{
+                    image 'gradle'
+                }
+            }
             steps{
                 sh "./gradlew clean"
-            }
-        }
-        stage('Assemble'){
-            steps{
                 sh "./gradlew assemble"
             }
         }
