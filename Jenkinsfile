@@ -4,8 +4,8 @@ node{
         sh 'docker ps -a'
         sh "apt-get install"
         sh "apt-get update"
-        sh "gradle :clean"
-        sh "gradle :assemble"
+        sh "./gradlew :clean"
+        sh "./gradlew :assemble"
         echo "Build Done"
     }
 }
