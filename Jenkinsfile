@@ -8,8 +8,8 @@ pipeline{
                 }
             }
             steps{
-                sh "./gradlew clean"
-                sh "./gradlew assemble"
+                sh "gradle clean"
+                sh "gradle assemble"
             }
         }
         stage('Deploy'){
