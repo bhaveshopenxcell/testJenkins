@@ -16,7 +16,6 @@ pipeline{
             agent{
                 docker{
                     image 'openjdk:latest'
-                    label 'rest-api-container'
                 }
             }
             steps{
