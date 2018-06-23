@@ -13,9 +13,14 @@ pipeline{
             }
         }
         stage('Deploy'){
-            agent none
+            agent{
+                docker{
+                    image 'openjdk:latest'
+                    label 'rest-api-container'
+                }
+            }
             steps{
-                sh "docker cp myjenkins:/var/jenkins_home/workspace/testjenkins_master-3UTD27TGRUAIYICLCYVIYFJGXLQDR4FZZ6XGSC7RSOOSKIHALDQA/build/libs/jetkinstest-0.0.1-SNAPSHOT.jar /home/app.jar"
+                sh "java -jar build/libs/jetkinstest-0.0.1-SNAPSHOT.jar"
                 echo "Done"
             }
         }
