@@ -16,6 +16,7 @@ pipeline{
             agent{
                 docker{
                     image 'openjdk:latest'
+                    args '-p 8082:8082'
                 }
             }
             steps{
