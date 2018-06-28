@@ -16,7 +16,7 @@ pipeline{
             agent{
                 docker{
                     image 'openjdk:latest'
-                    lable 'rest-apis'
+                    label 'rest-apis'
                     args '-d -p 8082'
                 }
             }
