@@ -20,7 +20,7 @@ pipeline{
             }
             steps{
                 sh "java -jar build/libs/jetkinstest-0.0.1-SNAPSHOT.jar"
-                echo "Rest APIs published successfully!!"
+                echo "Rest APIs published successfully!!!!"
             }
         }
     }
