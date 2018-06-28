@@ -16,7 +16,7 @@ pipeline{
             agent{
                 docker{
                     image 'openjdk:latest'
-                    args '-d -p 8082:8082'
+                    args '--detach -p 8082:8082'
                 }
             }
             steps{
